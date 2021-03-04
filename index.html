@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Number Guessing Game</title>
+
+	<style>
+		html {
+			font-family: sans-serif;
+		}
+
+		body {
+			width: 50%;
+			max-width: 800px;
+			min-width: 480px;
+			margin: 0 auto;
+		}
+
+		.lastResult {
+			color: white;
+			padding: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Number Guessing Game</h1>
+
+	<p>Guess a Number between 1 and 100.</p>
+
+	<div class="form">
+		<label for="guessField">Enter a guess: </label>
+		<input type="text" id="guessField" class="guessField">
+		<input type="submit" value="Submit guess" class="guessSubmit">
+	</div>
+
+	<div class="resultParas">
+		<p class="guesses"></p>
+		<p class="lastResult"></p>
+		<p class="lowOrHi"></p>
+	</div>
+	
+	<script src='script.js' defer> </script>
+</body>
+</html>
